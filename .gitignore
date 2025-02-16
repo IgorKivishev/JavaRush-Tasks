@@ -23,5 +23,8 @@
 hs_err_pid*
 replay_pid*
 
-# Скрипт для отправки на Git
-upload_to_git.bat
+# Ignore IntelliJ IDEA files
+.idea/
+
+# Ignore batch scripts
+upload_to_git.bat.bat
