@@ -1,5 +1,5 @@
 # JavaRush-Tasks
-# Проект обучения Java с JavaRush
+# Java Learning Project with JavaRush
 
-## Описание
-Этот проект создан для отслеживания моего прогресса в изучении Java через сервис JavaRush. Здесь я сохраняю свои решения задач и отмечаю ежедневные обновления.
+## Description
+This project was created to track my progress in learning Java through the JavaRush service. Here I save my solutions to tasks and mark daily updates.
