@@ -17,8 +17,12 @@ public class Solution {
         }
 
         for (int i = 0; i < strings.length; i++) {
+            String currenString = strings[i];
             for (int j = i + 1; j < strings.length; j++) {
-                if (strings[i] != null && strings[i].equals(strings[j])) {
+                if(currenString == null){
+                    break;
+                }
+                if (currenString.equals(strings[j])) {
                     strings[j] = null;
                     strings[i] = null;
                 }
