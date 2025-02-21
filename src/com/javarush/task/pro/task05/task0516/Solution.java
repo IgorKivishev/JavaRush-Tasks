@@ -13,13 +13,15 @@ public class Solution {
     public static int valueEnd = 13;
 
     public static void main(String[] args) {
-        for (int i = 0; i < array.length; i++) {
-            if (i%2 == 0){
-                Arrays.fill(array, 0, valueStart);
+            int selfspace = array.length/2;
+            if (array.length%2 == 0){
+                Arrays.fill(array, 0, selfspace, valueStart);
+                Arrays.fill(array, selfspace, array.length, valueEnd);
             } else{
-                Arrays.fill(array, valueEnd);
+                Arrays.fill(array, 0, selfspace+1, valueStart);
+                Arrays.fill(array, selfspace+1, array.length, valueEnd);
             }
-        }
+
         System.out.println(Arrays.toString(array));
     }
 }
