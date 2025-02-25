@@ -17,7 +17,7 @@ public class Person {
         return lastName;
     }
 
-    private String getFullName(){
+    public String getFullName(){
         return firstName + " " + lastName;
     }
 }
