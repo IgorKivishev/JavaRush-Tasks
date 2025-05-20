@@ -21,7 +21,19 @@ public class StringLinkedList {
     }
 
     public String get(int index) {
-        //напишите тут ваш код
+       if(index < 0)
+           return null;
+           Node current = first.next;
+           int count = 0;
+           while(current!=null&&current!=last){
+               if(count==index){
+                   return current.value;
+               }
+               current= current.next;
+               count++;
+           }
+
+       return null;
     }
 
     public static class Node {
